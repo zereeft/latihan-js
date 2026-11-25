@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #f1f5f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.form-card h2 {
+    text-align: center;
+    color: #1e293b;
+    margin-bottom: 25px;
+    font-size: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #334155;
+    font-size: 0.95rem;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.form-group input:focus {
+    border-color: #2563eb;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 12px;
+    background-color: #0f4c81; /* Warna biru gelap mirip gambar */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.2s;
+}
+
+.btn-submit:hover {
+    background-color: #0b3a63;
+}
+
+/* Navigasi Bawah */
+.nav-card {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.btn-nav {
+    flex: 1;
+    text-align: center;
+    text-decoration: none;
+    color: #0f4c81;
+    border: 1px solid #0f4c81;
+    padding: 10px;
+    border-radius: 6px;
+    margin: 0 5px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+
+.btn-nav:hover, .btn-nav.active {
+    background-color: #0f4c81;
+    color: white;
+}
+
+
+/* Header Card Biru Muda */
+.card-header {
+    background-color: #e8f0fe; /* Biru sangat muda */
+    padding: 20px 30px;
+    border-bottom: 1px solid #d2e3fc;
+}
+
+.card-header h2 {
+    color: #1e3a8a; /* Biru gelap */
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.card-body {
+    padding: 30px;
+}
+
+/* Styling Select/Dropdown */
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    outline: none;
+    background-color: #ffffff;
+    color: #334155;
+    appearance: auto; /* Menampilkan panah default browser */
+    cursor: pointer;
+}
+
+select:focus {
+    border-color: #2563eb;
+}
+
+/* Styling saat Dropdown Disabled (Belum bisa diklik) */
+select:disabled {
+    background-color: #f8fafc;
+    color: #94a3b8;
+    cursor: not-allowed;
+    border-color: #e2e8f0;
+}
+

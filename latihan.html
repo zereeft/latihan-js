@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Dropdown List - Tugas 6</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="card form-card">
+            <h2>Dynamic Dropdown List</h2>
+            
+            <form id="form-dropdown" onsubmit="event.preventDefault(); alert('Pilihan disimpan!');">
+                
+                <!-- Dropdown Kategori -->
+                <div class="form-group">
+                    <label>Kategori Produk</label>
+                    <select id="kategori" required>
+                        <option value="">Pilih Kategori Produk</option>
+                        <option value="Sport">Sport</option>
+                        <option value="Running">Running</option>
+                        <option value="Casual">Casual</option>
+                        <option value="Sandal">Sandal</option>
+
+                    </select>
+                </div>
+
+                <!-- Dropdown Merk (Awalnya Disabled) -->
+                <div class="form-group">
+                    <label>Merk</label>
+                    <select id="merk" disabled required>
+                        <option value="">Pilih Merk</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn-submit">Simpan Pilihan</button>
+            </form>
+        </div>
+
+        <!-- Tombol Navigasi Bawah -->
+        <div class="card nav-card">
+            <a href="index.html" class="btn-nav">Registrasi</a>
+            <a href="kodepos.html" class="btn-nav">Kode Pos</a>
+            <a href="latihan.html" class="btn-nav active">Dropdown</a>
+        </div>
+    </div>
+
+    <!-- Panggil file JS khusus latihan dropdown -->
+    <script src="js/latihan.js"></script>
+</body>
+</html>
